@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "typecheck": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "jsqr": "^1.4.0",
